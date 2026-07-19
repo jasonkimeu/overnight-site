@@ -41,7 +41,8 @@ export function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-40px" });
   const mv = useMotionValue(0);
-  const spring = useSpring(mv, { duration: 1.6, bounce: 0 });
+  // useSpring duration is in ms (motion-dom), unlike transition props (s)
+  const spring = useSpring(mv, { duration: 1600, bounce: 0 });
 
   useEffect(() => {
     if (inView) mv.set(to);

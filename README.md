@@ -14,8 +14,9 @@ React 19 + TypeScript + Tailwind v4 (Vite), Bun tooling, Cloudflare Pages. Frame
 ```sh
 bun install
 bun run typecheck
-bun run build      # tsc + vite build → dist/
-bun run deploy     # build + wrangler pages deploy (production, from main only)
+bun run build        # tsc + vite build → dist/
+bun run deploy       # build + preview deploy (current branch)
+bun run deploy:prod  # build + PRODUCTION deploy (run from main only)
 ```
 
 Deploys are direct-upload via wrangler (do not also Git-connect the Pages project). Branch previews: `bunx wrangler pages deploy dist --project-name overnightsite --branch <branch>`.

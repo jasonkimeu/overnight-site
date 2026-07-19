@@ -27,7 +27,7 @@ export default function Barber() {
           <motion.div
             aria-hidden
             initial={{ backgroundPositionY: 0 }}
-            animate={{ backgroundPositionY: 80 }}
+            animate={{ backgroundPositionY: 48 * Math.SQRT2 }}
             transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
             className="absolute left-6 top-0 hidden h-full w-3 opacity-40 md:block"
             style={{ background: "repeating-linear-gradient(45deg,#b91c1c 0 12px,#f5efe6 12px 24px,#1d4ed8 24px 36px,#f5efe6 36px 48px)" }}
@@ -127,7 +127,7 @@ export default function Barber() {
                   </p>
                 </div>
                 <motion.a
-                  href="#"
+                  href="/"
                   whileHover={{ scale: 1.03 }}
                   className="mt-8 block rounded-full bg-black px-8 py-4 text-center font-semibold text-white"
                 >

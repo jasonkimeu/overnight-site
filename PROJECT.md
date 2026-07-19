@@ -29,7 +29,7 @@
 - [x] Sales page built — `public/index.html`, single file, dark premium design
 - [x] GitHub repo + PR #1 + sub-agent self-review (13 findings, fixes applied) + merged to main — https://github.com/jasonkimeu/overnight-site
 - [x] **LIVE: https://overnightsite.pages.dev** (Cloudflare Pages, direct-upload deploys via wrangler; verified 2026-07-19)
-- [ ] Whop product created by Jason → paste checkout URL into `WHOP_URL` const in `public/index.html`
+- [ ] Whop product created by Jason → paste checkout URL into `WHOP_URL` const in `src/config.ts`, then `bun run deploy:prod`
 - [ ] Outreach fired (see `outreach/cold-outreach-pack.md`) — **this is the actual constraint; the site earns $0 without it**
 - [ ] First sale
 - [ ] First fulfillment (Claude builds the client site within 24h — same repo/deploy pattern)

@@ -137,7 +137,7 @@ export default function Coach() {
                     ))}
                   </ul>
                   <motion.a
-                    href="#"
+                    href="/"
                     whileHover={{ scale: 1.03 }}
                     className={`mt-8 rounded-full py-3 text-center font-semibold ${
                       p.featured ? "bg-emerald-400 text-black" : "border border-white/20 hover:border-emerald-400"

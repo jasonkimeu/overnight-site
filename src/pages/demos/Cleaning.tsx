@@ -129,7 +129,7 @@ export default function Cleaning() {
                 60-second booking. Flat, honest pricing. A re-clean free if anything's missed.
               </p>
               <motion.a
-                href="#"
+                href="/"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
                 className="relative mt-8 inline-block rounded-full bg-white px-10 py-4 font-display text-lg font-bold text-sky-700"

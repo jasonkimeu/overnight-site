@@ -120,9 +120,9 @@ export default function Home() {
 
         {/* marquee */}
         <div className="relative mx-auto mt-20 max-w-5xl overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_15%,black_85%,transparent)]">
-          <div className="marquee-track gap-10 py-2 text-sm font-medium uppercase tracking-[0.2em] text-mute/70">
+          <div className="marquee-track py-2 text-sm font-medium uppercase tracking-[0.2em] text-mute/70">
             {[...professions, ...professions].map((p, i) => (
-              <span key={i} className="flex items-center gap-10">
+              <span key={i} className="flex items-center gap-10 pr-10">
                 {p} <span className="text-gold">✦</span>
               </span>
             ))}

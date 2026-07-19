@@ -33,7 +33,7 @@ export default function DemoShell({
         </Link>
       </motion.div>
       {children}
-      <footer className="border-t border-white/10 bg-black/40 px-6 py-10 text-center text-sm text-white/60">
+      <footer className="border-t border-white/10 bg-[#0b0e14] px-6 py-10 text-center text-sm text-white/70">
         <p>
           This is a fictional showcase business, designed and built overnight by{" "}
           <Link to="/" className="underline decoration-dotted underline-offset-4 hover:text-white">
