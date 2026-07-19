@@ -8,6 +8,7 @@
 <meta property="og:title" content="OvernightSite — Your business online by tomorrow. $97.">
 <meta property="og:description" content="A custom website, live in 24 hours, $97 flat. Love it or full refund.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://overnightsite.pages.dev">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
 <style>
   :root{
@@ -100,6 +101,7 @@
   /* faq */
   details{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);margin-bottom:12px}
   summary{cursor:pointer;padding:18px 22px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
   summary::after{content:"+";color:var(--accent);font-size:1.3rem;font-weight:400}
   details[open] summary::after{content:"–"}
   details p{padding:0 22px 18px;color:var(--muted)}
@@ -270,7 +272,7 @@
       </details>
       <details>
         <summary>What if I don't like it?</summary>
-        <p>You get one full revision round included — most clients need exactly one. Still not in love? Full refund, and you keep the design files anyway. You cannot lose money on this.</p>
+        <p>You get one full revision round included — tell us everything you want changed and we fix it in one pass. Still not in love? Full refund, and you keep the design files anyway. You cannot lose money on this.</p>
       </details>
       <details>
         <summary>Who actually builds it?</summary>
@@ -289,7 +291,7 @@
     <h2>Every day without a website, you look like a hobby.</h2>
     <p class="lede">Tomorrow morning you could look like the business people trust. $97, once. Live in 24 hours. Zero risk.</p>
     <a class="cta js-buy" href="#pricing">Claim one of this week's 5 slots →</a>
-    <span class="cta-sub">Love it or it's free. You keep the design either way.</span>
+    <span class="cta-sub">Love it or it's free. You keep the design either way. · Prefer email? <a href="mailto:jasonkimeu@gmail.com">jasonkimeu@gmail.com</a></span>
   </div>
 </section>
 
@@ -300,7 +302,7 @@
 <script>
   // Checkout: set to the live Whop checkout URL once created.
   const WHOP_URL = "";
-  const FALLBACK = "mailto:jasonkimeu@gmail.com?subject=OvernightSite%20order%20—%20%2497%20build%20slot&body=Hi!%20I%20want%20a%20website%20built%20in%2024%20hours.%0A%0ABusiness%20name%3A%0AWhat%20I%20do%3A%0AWho%20my%20customers%20are%3A%0AHow%20people%20should%20contact%20me%3A%0A";
+  const FALLBACK = "mailto:jasonkimeu@gmail.com?subject=OvernightSite%20order%20-%20%2497%20build%20slot&body=Hi!%20I%20want%20a%20website%20built%20in%2024%20hours.%0A%0ABusiness%20name%3A%0AWhat%20I%20do%3A%0AWho%20my%20customers%20are%3A%0AHow%20people%20should%20contact%20me%3A%0A";
   document.querySelectorAll(".js-buy").forEach(a => { a.href = WHOP_URL || FALLBACK; });
 </script>
 </body>

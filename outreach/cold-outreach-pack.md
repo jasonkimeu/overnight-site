@@ -20,7 +20,7 @@ Priority order (highest intent first):
 >
 > 5 slots this week. Comment or DM with what your business does and I'll reply with a concept direction before you pay anything.
 
-*Rules note: r/forhire requires the [For Hire] tag and has a karma minimum. If blocked, r/jobbit and r/remotejs take the same post.*
+*Rules note: r/forhire requires the [For Hire] tag and has a karma minimum. If blocked, r/jobbit and r/RemoteJobs take the same post (check each sub's tag rules).*
 
 ## 2. Reddit — r/slavelabour (bargain-hunters, fast movers)
 

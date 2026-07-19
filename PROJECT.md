@@ -37,7 +37,7 @@
 1. Client brief arrives via Whop checkout questions (or the mailto fallback).
 2. Claude builds a single-file site (same quality bar as this sales page), new Cloudflare Pages project per client: `clientname.pages.dev`.
 3. Deliver link ≤24h from brief. One revision round. Ship files as a zip.
-4. Ask for: review/testimonial (with permission to display), referral. (proof-testimonials.md, referrals.md)
+4. Ask for: review/testimonial (with permission to display), referral. (See proof-testimonials.md and referrals.md in the Hormozi Stack folder, not this repo.)
 5. Upsell path (later): custom domain setup, extra pages, $19/mo "keep it updated" continuity.
 
 ## Constraint ladder (Hormozi: fix ONE at a time)

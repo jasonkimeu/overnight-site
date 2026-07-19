@@ -17,14 +17,14 @@ Claude can't create accounts or touch payment credentials, so this part is yours
 
 > Your business, online by tomorrow morning. A custom one-page website — designed, written, built and launched in 24 hours for $97 flat. Includes conversion copywriting, mobile-perfect layout, free forever hosting (Cloudflare, $0/month), SEO essentials, and one full revision round. You own all the files. **Guarantee: live in 24 hours and you love it — or 100% refund, and you keep the design anyway.** 5 build slots per week.
 
-- **Checkout questions** (Whop supports custom questions — add these 5, all required):
+- **Checkout questions** (Whop supports custom questions — add these 5; make 1–4 required, 5 optional):
   1. Business name?
   2. What do you do / sell? (2–3 sentences)
   3. Who are your customers?
   4. How should customers contact you? (phone / email / WhatsApp / booking link)
   5. Links to logo, photos, or anything you want included (optional)
 
-- Set stock/quantity limit to **5** if the product supports it (real scarcity, resets weekly).
+- Set stock/quantity limit to **5** if the product supports it — and reset the counter manually each Monday so the "5 slots/week" claim stays true.
 
 ## 3. List on Whop Discover (~2 min)
 
