@@ -25,12 +25,18 @@
 
 - [x] Offer built (Hormozi stack: offer-creation, offer-enhancement, pricing, fast-cash)
 - [x] Sales page built — `public/index.html`, single file, dark premium design
-- [ ] GitHub repo + PR + self-review + merge
-- [ ] Deployed to Cloudflare Pages (target: overnightsite.pages.dev)
+- [x] GitHub repo + PR #1 + sub-agent self-review (13 findings, fixes applied) + merged to main — https://github.com/jasonkimeu/overnight-site
+- [x] **LIVE: https://overnightsite.pages.dev** (Cloudflare Pages, direct-upload deploys via wrangler; verified 2026-07-19)
 - [ ] Whop product created by Jason → paste checkout URL into `WHOP_URL` const in `public/index.html`
 - [ ] Outreach fired (see `outreach/cold-outreach-pack.md`) — **this is the actual constraint; the site earns $0 without it**
 - [ ] First sale
 - [ ] First fulfillment (Claude builds the client site within 24h — same repo/deploy pattern)
+
+## Ops notes (for future agents)
+
+- Wrangler auth on this machine: OAuth token lives at `C:\Users\jason\.wrangler\config\default.toml` (copied there from `AppData\Roaming\xdg.config\.wrangler\config\` because non-interactive shells didn't pick up the XDG path).
+- The Google Drive checkout at `G:\My Drive\Cowork Playground\overnight-site` hit file locks during checkout; canonical working copy for deploys is a plain clone (scratchpad or anywhere off Drive). Fix the Drive copy with `git pull` when unlocked.
+- Browser-pane screenshots time out on this machine; verify pages with read_page/get_page_text instead.
 
 ## Fulfillment playbook (when an order lands)
 
