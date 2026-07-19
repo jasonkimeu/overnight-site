@@ -1,18 +1,22 @@
 # OvernightSite
 
-Custom one-page business websites, live in 24 hours, $97 flat.
+Custom websites for small businesses, live in 24 hours, $97 flat. **Live: https://overnightsite.pages.dev**
 
-- **Sales page:** `public/index.html` — single static file, zero dependencies, deployed on Cloudflare Pages.
-- **Status & plan:** [PROJECT.md](PROJECT.md)
-- **Payment setup (Whop):** [docs/whop-setup.md](docs/whop-setup.md)
-- **Outreach:** [outreach/cold-outreach-pack.md](outreach/cold-outreach-pack.md)
+React 19 + TypeScript + Tailwind v4 (Vite), Bun tooling, Cloudflare Pages. Framer Motion animations.
 
-## Deploy
+- `src/pages/Home.tsx` — sales landing page (Hormozi offer stack)
+- `src/pages/demos/` — premium concept demos shown to prospects (barber, coach, cleaning), each wrapped in `DemoShell` with an honest "concept demo" ribbon
+- `src/config.ts` — `WHOP_URL` checkout link (mailto fallback until set)
+- **Status & plan:** [PROJECT.md](PROJECT.md) · **Payments:** [docs/whop-setup.md](docs/whop-setup.md) · **Outreach:** [outreach/cold-outreach-pack.md](outreach/cold-outreach-pack.md)
 
-Deploys are direct-upload from `main` via wrangler (canonical method — do not also Git-connect the Pages project, or deployments will conflict):
+## Commands
 
 ```sh
-bunx wrangler pages deploy public --project-name overnightsite --branch main
+bun install
+bun run typecheck
+bun run build        # tsc + vite build → dist/
+bun run deploy       # build + preview deploy (current branch)
+bun run deploy:prod  # build + PRODUCTION deploy (run from main only)
 ```
 
-To wire up checkout: set `WHOP_URL` at the bottom of `public/index.html` to the live Whop checkout link and redeploy.
+Deploys are direct-upload via wrangler (do not also Git-connect the Pages project). Branch previews: `bunx wrangler pages deploy dist --project-name overnightsite --branch <branch>`.

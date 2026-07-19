@@ -19,7 +19,9 @@
 - Play chosen by Jason: websites-in-24h service (over digital product / Her Creator Haven)
 - Jason has **no warm audience** — fully cold start
 - Payment rail: **Whop** (Jason's choice; he creates the account/product — Claude cannot create accounts or touch payment credentials)
-- Stack: static HTML/CSS (deliberately no framework — fastest, zero deps), Cloudflare Pages, GitHub repo, PR + sub-agent-review workflow per Jason's prefs
+- Stack (Jason's explicit 2026-07-19 correction — applies to ALL sites including client builds): **React + TypeScript + Tailwind, Bun, Cloudflare; Convex/Clerk when a feature needs data/auth.** v1 was static HTML; v2 rebuilt on the full stack with Framer Motion animations. Never propose static-HTML shortcuts again.
+- Milestone 2 additions: premium animated landing page + 3 concept demo routes (`/demo/barber`, `/demo/coach`, `/demo/cleaning`) shown as proof to prospects; every demo wrapped in `DemoShell` (honest "concept demo" ribbon + CTA back to offer). Checkout URL lives in `src/config.ts` (`WHOP_URL`).
+- Whop progress: Jason's account sign-in must happen in the GStack headed browser (cookie import from Chrome/Edge fails — app-bound encryption). Wizard state saved: Design agency, pre-revenue, Kenya, name "OvernightSite" — stuck at the email sign-in step until Jason signs in there. Reddit: Jason's account works but reddit.com blocks the automated browser ("network security") — outreach posts may need manual posting from his devices.
 
 ## State
 
@@ -27,7 +29,7 @@
 - [x] Sales page built — `public/index.html`, single file, dark premium design
 - [x] GitHub repo + PR #1 + sub-agent self-review (13 findings, fixes applied) + merged to main — https://github.com/jasonkimeu/overnight-site
 - [x] **LIVE: https://overnightsite.pages.dev** (Cloudflare Pages, direct-upload deploys via wrangler; verified 2026-07-19)
-- [ ] Whop product created by Jason → paste checkout URL into `WHOP_URL` const in `public/index.html`
+- [ ] Whop product created by Jason → paste checkout URL into `WHOP_URL` const in `src/config.ts`, then `bun run deploy:prod`
 - [ ] Outreach fired (see `outreach/cold-outreach-pack.md`) — **this is the actual constraint; the site earns $0 without it**
 - [ ] First sale
 - [ ] First fulfillment (Claude builds the client site within 24h — same repo/deploy pattern)
